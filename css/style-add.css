@@ -5,14 +5,19 @@ img {
 /* chip--wrapper */
 #chip--wrapper img {
   object-fit: cover;
-  width: 80%;
+  width: 65%;
   transition: .2s linear;
 }
 #chip--wrapper img:hover {
-  transform: translateY(-5px);
+  transform: scale(1.1);
 }
 #chip--wrapper a {
   position: relative;
+}
+/* features */
+.feature--table img {
+  max-width: 96px;
+  padding-bottom: 0;
 }
 
 /* application--wrapper */
@@ -21,7 +26,7 @@ img {
 }
 #application--wrapper img {
   padding-bottom: 5px;
-  max-width: 120px;
+  max-width: 105px;
 }
 #application--wrapper span {
   color: #999;
