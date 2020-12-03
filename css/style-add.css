@@ -1,0 +1,71 @@
+img {
+  width: 90%;
+  max-width: 800px;
+}
+/* chip--wrapper */
+#chip--wrapper img {
+  object-fit: cover;
+  width: 80%;
+  transition: .2s linear;
+}
+#chip--wrapper img:hover {
+  transform: translateY(-5px);
+}
+#chip--wrapper a {
+  position: relative;
+}
+
+/* application--wrapper */
+#application--wrapper > div {
+  margin-bottom: 40px;
+}
+#application--wrapper img {
+  padding-bottom: 5px;
+  max-width: 120px;
+}
+#application--wrapper span {
+  color: #999;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+/* downloads */
+.dl-option-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.dl-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 33.3%;
+}
+.dl-option span {
+  font-size: 12px;
+}
+.btn-outline-primary:hover {
+  color: #fff !important;
+}
+table.download-table td {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+table.download-table td img {
+  padding-bottom: 0;
+}
+table.download-table td[data-th='Download'] {
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  #application--wrapper > div {
+    width: 50%;
+  }
+  .dl-option {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
