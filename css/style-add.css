@@ -70,6 +70,17 @@ table.download-table td[data-th='Download'] {
 }
 
 /* ESG */
+.ESG-item--card {
+  display: flex;
+  flex-direction: column;
+  transition: .5s;
+}
+.ESG-item--card:hover {
+  transform: translateY(-10px);
+}
+.ESG-item--card img {
+  width: 100%;
+}
 .ESG-chart-title {
   font-size: 18px;
   font-weight: bold;
