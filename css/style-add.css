@@ -70,6 +70,14 @@ table.download-table td[data-th='Download'] {
 }
 
 /* ESG */
+.ESG--wrapper {
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+}
+.ESG--wrapper .sec-pd {
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
 .ESG-item--card {
   display: flex;
   flex-direction: column;
