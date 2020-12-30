@@ -436,8 +436,8 @@
             </ul>
             <p>We support core principles of human rights by complying with international standards and by establishing
               a safe, healthy working environment based on respect and fairness for all employees, regardless of gender,
-              nationality, ethnicity, color, religious belief and sexual orientation. See below for our commitment to
-              labor rights.</p>
+              nationality, ethnicity, color, religious belief and sexual orientation. <a class="scrollToSec" href="#laborRights">See below for our commitment to
+                labor rights</a>.</p>
           </div>
         </div>
       </section>
@@ -566,8 +566,8 @@
         </div>
       </section>
 
-      <section class="sec-pd" data-aos="fade-up">
-        <div class="container">
+      <section id="laborRights" class="sec-pd">
+        <div class="container" data-aos="fade-up">
           <div class="editor">
             <h3>Labor rights</h3>
             <p>Silicon Motion is committed to upholding the human rights of our employees around the world, and to treat
@@ -828,7 +828,15 @@
   <script src="js/lang.js"></script>
   <script src="js/sweetalert2.all.min.js"></script>
   <script src="js/stickynav.min.js"></script>
-
+  <script>
+    $(function(){
+      $('.scrollToSec').click(function(e){
+        e.preventDefault();
+        var id = $(this).attr('href');
+        var top = $(id).offset().top - 60;
+        $('html, body').animate({ scrollTop: top }, 500);
+      });
+    });
+  </script>
 </body>
-
 </html>
