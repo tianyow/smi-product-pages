@@ -139,6 +139,24 @@ ul.ESG-community-support li img {
 .keymericTable td {
   font-weight: normal !important;
 }
+.yt--wrapper {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.yt--wrapper iframe {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  max-width: 800px;
+  height:100%;
+}
+
 /* RWD */
 @media (max-width: 960px) {
   ul.ESG-community-support li {
