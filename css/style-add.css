@@ -78,6 +78,9 @@ table.download-table td[data-th='Download'] {
   padding-top: 2vw;
   padding-bottom: 2vw;
 }
+.cc-card--row h4 {
+  min-height: 66px;
+}
 .corporate-citizenship-item--card {
   display: flex;
   flex-direction: column;
@@ -88,6 +91,7 @@ table.download-table td[data-th='Download'] {
 }
 .corporate-citizenship-item--card img {
   width: 100%;
+  object-fit: cover;
 }
 .corporate-citizenship-chart-title {
   font-size: 18px;
@@ -182,6 +186,9 @@ ul.corporate-citizenship-community-support li img {
 /* RWD */
 /* IR-table layout fix */
 @media (max-width: 991px) {
+  .cc-card--row h4 {
+    min-height: auto;
+  }
   .ir-table {
     padding-bottom: 1rem;
   }
@@ -189,7 +196,7 @@ ul.corporate-citizenship-community-support li img {
     color: #666;
     width: 80%;
     padding-left: 5%;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
 }
 @media (max-width: 960px) {
