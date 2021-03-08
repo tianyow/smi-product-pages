@@ -180,6 +180,18 @@ ul.corporate-citizenship-community-support li img {
 }
 
 /* RWD */
+/* IR-table layout fix */
+@media (max-width: 991px) {
+  .ir-table {
+    padding-bottom: 1rem;
+  }
+  .ir-table td[data-th]:before {
+    color: #666;
+    width: 80%;
+    padding-left: 5%;
+    font-size: 0.85rem;
+  }
+}
 @media (max-width: 960px) {
   ul.corporate-citizenship-community-support li {
     width: 33.3%;
