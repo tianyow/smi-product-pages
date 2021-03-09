@@ -1,4 +1,4 @@
-﻿@page {
+﻿/* @page {
   size: A4 portrait;
   margin: 0.5cm;
   orphans: 2;
@@ -10,12 +10,7 @@ body{
   line-height: 1.25;
   font-size: 12pt;
 }
-header, .ctrl-bar {
-  display: none;
-}
-section.banner {
-  max-height: 1cm;
-}
+
 h1, h2, h3, h4, h5, h6 {
   page-break-after:avoid;
   page-break-inside:avoid
@@ -33,4 +28,10 @@ table, blockquote {
 ul, ol, dl, p {
   page-break-before:avoid;
 }
-
+ */
+header, .ctrl-bar, .breadcrumbs {
+  display: none;
+}
+section.banner {
+  max-height: 1cm;
+}
