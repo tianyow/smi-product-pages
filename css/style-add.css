@@ -216,3 +216,12 @@ ul.corporate-citizenship-community-support li img {
     width: 50%;
   }
 }
+@media (max-width: 480px) {
+  .keymericTable {
+    font-size: 13px !important;
+  }
+  .keymericTable th,
+  .keymericTable td {
+    padding: .5rem !important;
+  }
+}
