@@ -37228,6 +37228,84 @@ a.card .btn-bg-primary {
   background-image: url(../images/chevron-down-solid_disabled.svg)
 }
 
+.d-cookie {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #ddd;
+  z-index: 1000;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%)
+}
+
+.d-cookie .container .d-cookie-block {
+  margin: 20px 0
+}
+
+.d-cookie .container .d-cookie-block.btn {
+  background: #006abc;
+  width: 100%
+}
+
+@media (max-width:767px) {
+  .d-cookie .container .d-cookie-block.btn {
+    width: 40%;
+    margin: auto auto 1em
+  }
+}
+
+.d-cookie .container .d-cookie-block.btn a {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: #fff
+}
+
+.d-cookie .container .d-cookie-block h3 {
+  color: #006abc;
+  margin-bottom: .25em
+}
+
+.d-cookie .container .d-cookie-block p {
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: .3px;
+  text-align: left;
+  color: #666;
+  margin: 0
+}
+
+.d-cookie .container .d-cookie-block p a {
+  position: relative;
+  color: #006abc
+}
+
+.d-cookie .container .d-cookie-block p a:after {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: #0085d1
+}
+
+.d-cookie.show {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0)
+}
+
+.d-cookie.hide {
+  display: none
+}
+
 .design-editor h1,
 .design-editor h2,
 .design-editor h3,
@@ -39635,7 +39713,8 @@ a.shadowcard:hover .btn {
   display: block;
   padding: 2.5em 2.5em 4em;
   position: relative;
-  z-index: 1
+  z-index: 1;
+  min-height: 300px
 }
 
 .main-media .news-hero:after {
@@ -40658,12 +40737,7 @@ a.shadowcard:hover .btn {
 }
 
 .careers-map {
-  height: 100%;
-  min-height: 740px
-}
-
-.careers-map,
-.careers-map .btn {
+  height: 740px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40675,17 +40749,37 @@ a.shadowcard:hover .btn {
   justify-content: center
 }
 
-.careers-map .btn {
+.careers-map .container {
+  margin-left: inherit;
+  margin-right: inherit
+}
+
+.careers-map .job-btn {
   width: 255px;
   height: 255px;
   border-radius: 50%;
   background: rgba(0, 65, 134, .85);
   -webkit-box-shadow: 0 0 8px 5px rgba(60, 182, 248, .5);
   box-shadow: 0 0 8px 5px rgba(60, 182, 248, .5);
+  margin: auto
+}
+
+.careers-map .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 50%;
   font-weight: 600;
   font-size: 1.25rem;
   white-space: nowrap;
-  margin: auto
+  height: 100%
 }
 
 .careers-map .btn:active,
@@ -40696,12 +40790,15 @@ a.shadowcard:hover .btn {
 
 @media (max-width:991px) {
   .careers-map {
-    min-height: 450px
+    height: 450px
+  }
+
+  .careers-map .job-btn {
+    width: 150px;
+    height: 150px
   }
 
   .careers-map .btn {
-    width: 150px;
-    height: 150px;
     font-size: 16px
   }
 }
