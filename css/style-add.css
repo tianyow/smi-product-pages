@@ -1,11 +1,17 @@
 .editor h5 {
   color: #555;
 }
-
 img {
   width: 90%;
   max-width: 800px;
 }
+.footnote-block {
+  color: #999;
+  display: block;
+  font-size: 12px;
+  padding-top: 5px;
+}
+
 /* chip--wrapper */
 #chip--wrapper img {
   object-fit: cover;
