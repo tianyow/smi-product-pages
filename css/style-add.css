@@ -149,6 +149,10 @@ ul.corporate-citizenship-community-support li img {
 .keymericTable td {
   font-weight: normal !important;
 }
+.yt--container {
+  max-width: 720px; 
+  margin: 0 auto;
+}
 .yt--wrapper {
   width: 100%;
   text-align: center;
