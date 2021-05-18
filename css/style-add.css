@@ -149,6 +149,9 @@ ul.corporate-citizenship-community-support li img {
 .keymericTable td {
   font-weight: normal !important;
 }
+.keymericTable tbody tr:nth-child(even) {
+  background-color: #eee;
+}
 .yt--container {
   max-width: 720px; 
   margin: 0 auto;
