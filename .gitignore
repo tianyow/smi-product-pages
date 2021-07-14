@@ -1,6 +1,7 @@
 # includes
 _includes/
 downloads/
+*.xml
 
 # Sass
 *.css.map
