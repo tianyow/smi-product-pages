@@ -453,6 +453,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <li class="convertnav__lilist">
                 <a class="convertnav__item js-convertnavitem" href="#pro-4">Downloads</a>
               </li>
+              <li class="convertnav__lilist">
+                <a class="convertnav__item js-convertnavitem" href="#pro-5">Powered by Silicon Motion</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -764,6 +767,76 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div><!-- /.container-->
       </section>
 
+      <section id="pro-5" class="pro-4 sec-pd sec-scroll">
+        <div class="container" data-aos="fade-up">
+          <div class="editor">
+            <h3>Powered by Silicon Motion</h3>
+          </div>
+          <div class="row">
+            <ul class="applications-menu">
+              <li>
+                <a href="">
+                  <img src="images/applications/icon_USB-Docking-Station.svg" alt="">
+                  <span>USB Docking Station</span>
+                </a>
+                <div class="submenu-wrapper">
+                  <ul class="applications-submenu">
+                    <li><a href="https://www.accellww.com/products/instantview-usb-c-docking-station" target="_blank">Accell InstantView USB-C 4K Docking Station</a></li>
+                    <li><a href="https://www.accellww.com/products/accell-air-usb-c-docking-station" target="_blank">Accell Air™ InstantView USB-C 4K Dock</a></li>
+                    <li><a href="https://linqbyelements.dk/7in2-d2.html" target="_blank">LINQ 7 in 2 D2 Hub</a></li>
+                    <li><a href="https://www.amazon.com/gp/product/B0874HP7GC/" target="_blank">WAVLINK USB C Docking Station</a></li>
+                  </ul>
+                  <a href="" class="submenu-close">x</a>
+                </div>
+              </li>
+              <li>
+                <a href="">
+                  <img src="images/applications/icon_USB-Dongle.svg" alt="">
+                  <span>USB Dongle</span>
+                </a>
+                <div class="submenu-wrapper">
+                  <ul class="applications-submenu">
+                    <li><a href="https://www.amazon.com/gp/product/B083KM1MGJ/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1">StarTech.com USB 3.0 to HDMI and VGA Adapter</a></li>
+                    <li><a href="https://www.wavlink.com/en_us/product/UG7602H" target="_blank">WAVLINK UG7602H USB3.0 to HDMI Dual Display Adapter</a></li>
+                    <li><a href="https://www.amazon.com/WAVLINK-Multi-Display-Converter-Corporate-Training/dp/B0943GDQG1/" target="_blank">WAVLINK USB 3.0 to Dual HDMI Video Graphic Adapter</a></li>
+                    <li><a href="https://www.amazon.com/dp/B09438YVLB/ref=twister_B0943FH45Q" target="_blank">WAVLINK USB 3.0 to HDMI/DVI Video Graphic Adapter</a></li>
+                  </ul>
+                  <a href="" class="submenu-close">x</a>
+                </div>
+              </li>
+              <li>
+                <img src="images/applications/icon_Wireless-Display.svg" alt="">
+                <span>Wireless Display</span>
+              </li>
+              <li>
+                <a href="">
+                  <img src="images/applications/icon_VGA-Card.svg" alt="">
+                  <span>VGA Card</span>
+                </a>
+                <div class="submenu-wrapper">
+                  <ul class="applications-submenu">
+                    <li><a href="https://www.asrockrack.com/general/productdetail.asp?Model=M2_VGA#Specifications" target="_blank">ASRock M2_VGA</a></li>
+                    <li><a href="https://www.innodisk.com/en/products/embedded-peripheral/display/egpv-1101" target="_blank">Innodisk EGPV-1101 M.2 to Single HDMI or DVI-D Module ; M.2 to Single/Dual Channel LVDS Module </a></li>
+                    <li><a href="https://www.innodisk.com/en/products/embedded-peripheral/display/empv-1202" target="_blank">Innodisk EMPV-1202 mPCIe to VGA & 18/24 bit LVDS module</a></li>
+                    <li><a href="https://www.innodisk.com/en/products/embedded-peripheral/display/empv-1201" target="_blank">Innodisk EMPV-1201 mPCIe to dual VGA & HDMI (or DVI) module  </a></li>
+                  </ul>
+                  <a href="" class="submenu-close">x</a>
+                </div>
+              </li>
+              <li><img src="images/applications/icon_Video-Wall.svg" alt=""><span>Video Wall</span></li>
+              <li><img src="images/applications/icon_Digital-Signage.svg" alt=""><span>Digital Signage</span></li>
+              <li><img src="images/applications/icon_ICP-POS.svg" alt=""><span>ICP / POS</span></li>
+              <li><img src="images/applications/icon_Medical-Panel.svg" alt=""><span>Medical Panel</span></li>
+              <li><img src="images/applications/icon_Industrial-Rugged-Panel.svg" alt=""><span>Industrial Rugged Panel</span></li>
+              <li><img src="images/applications/icon_HMI-Factory-Automation.svg" alt=""><span>HMI / Factory Automation</span></li>
+              <li><img src="images/applications/icon_Server.svg" alt=""><span>Server</span></li>
+              <li><img src="images/applications/icon_Thin-Client.svg" alt=""><span>Thin Client</span></li>
+              <li><img src="images/applications/icon_Gaming.svg" alt=""><span>Gaming</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>  
+
     </div><!-- /.scrolltosec -->
 
   </main>
@@ -840,7 +913,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- <script src="js/lang.js"></script> -->
   <script src="js/sweetalert2.all.min.js"></script>
   <script src="js/stickynav.min.js"></script>
-
+  <script>
+    var appMenu = $('.applications-menu > li > a');
+    var appMenuClose = $('.submenu-close');
+    appMenu.on('click', function(e) {
+      $(this).next('.submenu-wrapper').addClass('show');
+      e.preventDefault();
+    });
+    appMenuClose.on('click', function(e) {
+      $('.submenu-wrapper').removeClass('show');
+      e.preventDefault();
+    })
+  </script>
 </body>
-
 </html>

@@ -1,15 +1,10 @@
 .editor h5 {
   color: #555;
 }
-img {
+
+.editor img {
   width: 90%;
   max-width: 800px;
-}
-.footnote-block {
-  color: #999;
-  display: block;
-  font-size: 12px;
-  padding-top: 5px;
 }
 
 /* chip--wrapper */
@@ -18,12 +13,15 @@ img {
   width: 65%;
   transition: .2s linear;
 }
+
 #chip--wrapper img:hover {
   transform: scale(1.1);
 }
+
 #chip--wrapper a {
   position: relative;
 }
+
 /* features */
 .feature--table img {
   max-width: 96px;
@@ -34,10 +32,12 @@ img {
 #application--wrapper > div {
   margin-bottom: 40px;
 }
+
 #application--wrapper img {
   padding-bottom: 5px;
   max-width: 105px;
 }
+
 #application--wrapper span {
   color: #999;
   display: block;
@@ -45,12 +45,12 @@ img {
   text-align: center;
 }
 
-
 /* downloads */
 .dl-option-wrap {
   display: flex;
   flex-wrap: wrap;
 }
+
 .dl-option {
   display: flex;
   align-items: center;
@@ -58,19 +58,24 @@ img {
   flex-direction: column;
   width: 33.3%;
 }
+
 .dl-option span {
   font-size: 12px;
 }
+
 .btn-outline-primary:hover {
   color: #fff !important;
 }
+
 table.download-table td {
   padding-top: .75rem;
   padding-bottom: .75rem;
 }
+
 table.download-table td img {
   padding-bottom: 0;
 }
+
 table.download-table td[data-th='Download'] {
   text-align: center;
 }
@@ -80,30 +85,37 @@ table.download-table td[data-th='Download'] {
   padding-top: 3vw;
   padding-bottom: 3vw;
 }
+
 .corporate-citizenship--wrapper .sec-pd {
   padding-top: 2vw;
   padding-bottom: 2vw;
 }
+
 .cc-card--row h4 {
   min-height: 66px;
 }
+
 .corporate-citizenship-item--card {
   display: flex;
   flex-direction: column;
   transition: .5s;
 }
+
 .corporate-citizenship-item--card:hover {
   transform: translateY(-10px);
 }
+
 .corporate-citizenship-item--card img {
   width: 100%;
   object-fit: cover;
 }
+
 .corporate-citizenship-chart-title {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
 }
+
 ul.corporate-citizenship-community-support {
   margin: 0;
   padding: 0;
@@ -111,51 +123,54 @@ ul.corporate-citizenship-community-support {
   flex-wrap: wrap;
   align-items: center;
 }
+
 ul.corporate-citizenship-community-support li {
   width: 33.3%;
   padding-left: 0;
 }
+
 ul.corporate-citizenship-community-support li::before {
   display: none;
 }
+
 ul.corporate-citizenship-community-support li a {
-  display: block;
   height: 120px;
   display: flex;
   align-items: center;
 }
+
 ul.corporate-citizenship-community-support li img {
   width: 75%;
   max-height: 120px;
   object-fit: contain;
 }
+
 .keymericTableWrapper {
   width: 100%;
 }
+
 .keymericTable tr td:not(:first-child) {
   text-align: right;
 }
+
 .keymericTable tr.underline td {
   border-bottom: 2px solid #888;
 }
+
 .keymericTable th, .keymericTable td {
   padding: .5rem .75rem !important;
 }
+
 .keymericTable th {
   background: lightblue;
   color: #111;
   font-weight: bold;
 }
+
 .keymericTable td {
   font-weight: normal !important;
 }
-.keymericTable tbody tr:nth-child(even) {
-  background-color: #eee;
-}
-.yt--container {
-  max-width: 720px; 
-  margin: 0 auto;
-}
+
 .yt--wrapper {
   width: 100%;
   text-align: center;
@@ -165,39 +180,142 @@ ul.corporate-citizenship-community-support li img {
   height: 0;
   overflow: hidden;
 }
+
 .yt--wrapper iframe {
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
-.yt--note {
-  text-align: center;
-  margin-top: 10px;
-}
+
 .more-info .info {
   display: flex;
   align-items: center;
 }
+
 .more-info .info .item {
   display: flex;
   align-items: center;
   margin-right: 10px;
 }
+
 .more-info .info .item img {
   width: 25px;
   padding-bottom: 0;
 }
+
 .ir-table th, .ir-table td {
   padding: .5rem !important;
 }
+
 .ir-table img {
   max-width: 25px;
   padding-bottom: 0;
 }
+
 .ir-table th img {
   display: inline-block;
+}
+
+/* Powered by SMI menu */
+.applications-menu {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, clamp(12.5%, 120px, 33.3%));
+  justify-content: space-between;
+  grid-gap: 15px;
+  width: 100%;
+}
+
+.applications-menu > li {
+  display: flex;
+  flex: 1 0 10%;
+  flex-direction: column;
+  border: 1px solid #999;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  justify-content: flex-start;
+  padding-bottom: 1rem;
+}
+
+.applications-menu > li span {
+  color: #555;
+  font-size: 0.8rem;
+  text-align: center;
+  width: 100%;
+}
+
+.applications-menu > li img {
+  width: 100%;
+  max-width: 72px;
+  max-height: 72px;
+  filter: grayscale(100%);
+}
+
+.applications-menu > li:hover {
+  background: #efefef;
+  border: 1px solid #0071bc;
+  transition: all .3s linear;
+}
+
+.applications-menu > li:hover span {
+  color: #0071bc;
+}
+
+.applications-menu > li:hover img {
+  filter: none;
+}
+
+.submenu-wrapper {
+  background: #0071bc;
+  border-radius: 10px;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 1rem 1rem 2rem;
+  z-index: 1;
+}
+
+.submenu-wrapper.show {
+  display: block;
+}
+
+.applications-submenu {
+  position: relative;
+}
+
+.applications-submenu li {
+  text-align: left;
+}
+
+.applications-submenu li::marker {
+  color: #00ecec;
+}
+
+.applications-submenu li a {
+  color: #eee;
+  line-height: 2.2;
+}
+
+.applications-submenu li a:hover {
+  color: #00ecec;
+}
+
+.submenu-close {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  background: #005e9c;
+  top: 10px;
+  right: 10px;
+  font-size: 1.25rem;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
 }
 
 /* RWD */
@@ -216,11 +334,13 @@ ul.corporate-citizenship-community-support li img {
     font-size: 0.9rem;
   }
 }
+
 @media (max-width: 960px) {
   ul.corporate-citizenship-community-support li {
     width: 33.3%;
   }
 }
+
 @media (max-width: 640px) {
   #application--wrapper > div {
     width: 50%;
@@ -233,12 +353,13 @@ ul.corporate-citizenship-community-support li img {
     width: 50%;
   }
 }
+
 @media (max-width: 480px) {
   .keymericTable {
     font-size: 13px !important;
   }
-  .keymericTable th,
-  .keymericTable td {
+  .keymericTable th, .keymericTable td {
     padding: .5rem !important;
   }
 }
+/*# sourceMappingURL=style-add.css.map */
