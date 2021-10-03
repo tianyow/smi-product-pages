@@ -175,20 +175,26 @@ ul.corporate-citizenship-community-support li img {
   width: 100%;
   text-align: center;
   position: relative;
-  padding-bottom: 56.25%;
+  /* padding-bottom: 56.25%;
   padding-top: 30px;
   height: 0;
-  overflow: hidden;
+  overflow: hidden; */
+  max-width: 800px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
 }
 
 .yt--wrapper iframe {
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
   width: 100%;
   height: 100%;
 }
-
+.yt--note {
+  text-align: center;
+  padding: 16px;
+}
 .more-info .info {
   display: flex;
   align-items: center;
@@ -220,11 +226,11 @@ ul.corporate-citizenship-community-support li img {
 
 /* Powered by SMI menu */
 .applications-menu {
-  position: relative;
+  /* position: relative; */
   display: grid;
-  grid-template-columns: repeat(auto-fill, clamp(12.5%, 120px, 33.3%));
+  grid-template-columns: repeat(auto-fill, clamp(15%, 120px, 33.3%));
   justify-content: space-between;
-  grid-gap: 15px;
+  grid-gap: 10px 15px;
   width: 100%;
 }
 
@@ -237,9 +243,11 @@ ul.corporate-citizenship-community-support li img {
   text-align: center;
   cursor: pointer;
   justify-content: flex-start;
-  padding-bottom: 1rem;
 }
-
+.applications-menu > li > a {
+  padding-bottom: 8px;
+  height: 100%;
+}
 .applications-menu > li span {
   color: #555;
   font-size: 0.8rem;
@@ -271,34 +279,56 @@ ul.corporate-citizenship-community-support li img {
 .submenu-wrapper {
   background: #0071bc;
   border-radius: 10px;
-  display: none;
   position: absolute;
-  top: 0;
+  /* top: 25px; */
   left: 0;
   width: 100%;
   padding: 1rem 1rem 1rem 2rem;
   z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity .1s, top 0s;
 }
 
 .submenu-wrapper.show {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+  /* top: 0px; */
 }
 
 .applications-submenu {
   position: relative;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .applications-submenu li {
   text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 50%;
 }
 
 .applications-submenu li::marker {
   color: #00ecec;
 }
 
-.applications-submenu li a {
+.applications-submenu li img {
+  background: #fff;
+  border-radius: 5px;
+  float: left;
+  min-width: 120px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+.applications-submenu li a,
+.applications-submenu li div {
   color: #eee;
-  line-height: 2.2;
+  line-height: 1.5;
+  flex: 1;
+  padding-left: 10px;
 }
 
 .applications-submenu li a:hover {
@@ -352,6 +382,9 @@ ul.corporate-citizenship-community-support li img {
   ul.corporate-citizenship-community-support li {
     width: 50%;
   }
+  .applications-submenu li {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -360,6 +393,9 @@ ul.corporate-citizenship-community-support li img {
   }
   .keymericTable th, .keymericTable td {
     padding: .5rem !important;
+  }
+  .applications-menu {
+    grid-template-columns: repeat(auto-fill, 30%);
   }
 }
 /*# sourceMappingURL=style-add.css.map */
