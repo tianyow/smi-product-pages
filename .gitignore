@@ -8,8 +8,8 @@ downloads/
 *.sass.map
 *.scss.map
 
-.sass-cache/
-sass/
+# .sass-cache/
+# sass/
 css/source/
 
 # vscode
