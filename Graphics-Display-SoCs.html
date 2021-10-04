@@ -1070,8 +1070,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     // Open Submenu
     appMenu.on('click', function(e) {
       e.preventDefault();
-      $('.submenu-wrapper').removeClass('show');
+      $('.submenu-wrapper.show').removeClass('show');
       $(this).next('.submenu-wrapper').addClass('show');
+      // Get and set position and width
       const currentTop = $(this).parent('li').offset().top;
       const currentLeft = $('.applications-menu').offset().left;
       const menuWidth = $('.applications-menu').width();
@@ -1087,11 +1088,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </script>
   
   <script>
+    function menuClose() {
+      $('.submenu-wrapper').removeClass('show');
+    }
     $(document).on('keyup', function(event) {
-        if(event.key == "Escape") {
-          $('.submenu-wrapper').removeClass('show');
-        }
-      });
+      if(event.key == "Escape") {
+        menuClose();
+      }
+    });
+    $(window).on('resize', menuClose);
   </script>
 </body>
 </html>
