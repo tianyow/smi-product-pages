@@ -222,15 +222,16 @@ ul.corporate-citizenship-community-support li img {
 /* Powered by SMI menu */
 .applications-menu {
   display: grid;
-  grid-template-columns: repeat(auto-fill, clamp(15%, 120px, 33.3%));
+  grid-template-columns: repeat(auto-fill, clamp(19%, 120px, 33.3%));
   justify-content: space-between;
-  grid-gap: 10px 15px;
+  gap: 20px 10px;
   width: 100%;
+  margin-bottom: 40px;
 }
 
 .applications-menu > li {
   display: flex;
-  flex: 1 0 10%;
+  flex: 1 0 100%;
   flex-direction: column;
   border: 1px solid #999;
   border-radius: 10px;
@@ -314,6 +315,7 @@ ul.corporate-citizenship-community-support li img {
   border-radius: 5px;
   float: left;
   min-width: 120px;
+  min-height: 90px;
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
