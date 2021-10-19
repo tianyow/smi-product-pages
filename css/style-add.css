@@ -245,18 +245,18 @@ ul.corporate-citizenship-community-support li img {
   height: 100%;
 }
 
+.applications-menu > li > a img {
+  width: 100%;
+  max-width: 72px;
+  max-height: 72px;
+  filter: grayscale(100%);
+}
+
 .applications-menu > li span {
   color: #555;
   font-size: 0.8rem;
   text-align: center;
   width: 100%;
-}
-
-.applications-menu > li img {
-  width: 100%;
-  max-width: 72px;
-  max-height: 72px;
-  filter: grayscale(100%);
 }
 
 .applications-menu > li:hover {
@@ -314,8 +314,8 @@ ul.corporate-citizenship-community-support li img {
   background: #fff;
   border-radius: 5px;
   float: left;
-  min-width: 120px;
-  min-height: 90px;
+  max-width: 120px;
+  max-height: 90px;
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }

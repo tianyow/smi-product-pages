@@ -223,6 +223,12 @@ ul.corporate-citizenship-community-support {
     & > a {
       padding-bottom: 8px;
       height: 100%;
+      img {
+        width: 100%;
+        max-width: 72px;
+        max-height: 72px;
+        filter: grayscale(100%);
+      }
     }
     span {
       color: #555;
@@ -232,12 +238,7 @@ ul.corporate-citizenship-community-support {
       // position: absolute;
       // bottom: 5px;
     }
-    img {
-      width: 100%;
-      max-width: 72px;
-      max-height: 72px;
-      filter: grayscale(100%);
-    }
+    
     &:hover {
       background: #efefef;
       border: 1px solid #0071bc;
@@ -285,8 +286,10 @@ ul.corporate-citizenship-community-support {
       background: #fff;
       border-radius: 5px;
       float: left;
-      min-width: 120px;
-      min-height: 90px;
+      // min-width: 120px;
+      // min-height: 90px;
+      max-width: 120px;
+      max-height: 90px;
       aspect-ratio: 4 / 3;
       object-fit: cover;
     }
