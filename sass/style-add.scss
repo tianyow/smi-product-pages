@@ -282,26 +282,39 @@ ul.corporate-citizenship-community-support {
     &::marker {
       color: rgb(0, 236, 236);
     }
-    img {
-      background: #fff;
-      border-radius: 5px;
-      float: left;
-      // min-width: 120px;
-      // min-height: 90px;
-      max-width: 120px;
-      max-height: 90px;
-      aspect-ratio: 4 / 3;
-      object-fit: cover;
-    }
+    
     a, div {
       color: #eee;
       line-height: 1.5;
       flex: 1;
       padding-left: 10px;
-    }
-    a:hover {
-      color: rgb(0, 236, 236);
-    }
+      display: flex;
+      align-items: center;
+      img {
+        background: #fff;
+        border-radius: 5px;
+        float: left;
+        // min-width: 120px;
+        // min-height: 90px;
+        max-width: 120px;
+        max-height: 90px;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        transition: .3s;
+      }
+      .app-product--title {
+        color: #fff;
+        font-size: 1rem;
+      }
+      &:hover {
+        img {
+          transform: scale(1.05);
+        }
+        .app-product--title {
+          color: rgb(0, 236, 236);
+        }
+      }  
+    }  
   }
 }
 .submenu-close {

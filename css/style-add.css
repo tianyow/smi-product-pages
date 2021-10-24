@@ -310,7 +310,16 @@ ul.corporate-citizenship-community-support li img {
   color: #00ecec;
 }
 
-.applications-submenu li img {
+.applications-submenu li a, .applications-submenu li div {
+  color: #eee;
+  line-height: 1.5;
+  flex: 1;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.applications-submenu li a img, .applications-submenu li div img {
   background: #fff;
   border-radius: 5px;
   float: left;
@@ -318,16 +327,19 @@ ul.corporate-citizenship-community-support li img {
   max-height: 90px;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  transition: .3s;
 }
 
-.applications-submenu li a, .applications-submenu li div {
-  color: #eee;
-  line-height: 1.5;
-  flex: 1;
-  padding-left: 10px;
+.applications-submenu li a .app-product--title, .applications-submenu li div .app-product--title {
+  color: #fff;
+  font-size: 1rem;
 }
 
-.applications-submenu li a:hover {
+.applications-submenu li a:hover img, .applications-submenu li div:hover img {
+  transform: scale(1.05);
+}
+
+.applications-submenu li a:hover .app-product--title, .applications-submenu li div:hover .app-product--title {
   color: #00ecec;
 }
 
