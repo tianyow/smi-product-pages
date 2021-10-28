@@ -279,7 +279,7 @@ ul.corporate-citizenship-community-support li img {
   position: absolute;
   left: 0;
   width: 100%;
-  padding: 1rem 1rem 1rem 2rem;
+  padding: 1.5rem;
   z-index: 1;
   visibility: hidden;
   opacity: 0;
@@ -379,6 +379,12 @@ ul.corporate-citizenship-community-support li img {
   }
 }
 
+@media (max-width: 768px) {
+  .submenu-wrapper {
+    padding: 1.5rem 0rem 1rem;
+  }
+}
+
 @media (max-width: 640px) {
   #application--wrapper > div {
     width: 50%;
@@ -404,6 +410,9 @@ ul.corporate-citizenship-community-support li img {
   }
   .applications-menu {
     grid-template-columns: repeat(auto-fill, 30%);
+  }
+  .applications-submenu li a img, .applications-submenu li div img {
+    max-width: 100px;
   }
 }
 /*# sourceMappingURL=style-add.css.map */
