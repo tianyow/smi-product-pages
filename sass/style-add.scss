@@ -296,8 +296,8 @@ ul.corporate-citizenship-community-support {
         float: left;
         // min-width: 120px;
         // min-height: 90px;
-        max-width: 120px;
-        max-height: 90px;
+        width: 120px;
+        height: 90px;
         aspect-ratio: 4 / 3;
         object-fit: cover;
         transition: .3s;
@@ -390,7 +390,7 @@ ul.corporate-citizenship-community-support {
     li {
       a, div {
         img {
-          max-width: 100px;
+          width: 100px;
         }
       }
     }

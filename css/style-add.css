@@ -323,8 +323,8 @@ ul.corporate-citizenship-community-support li img {
   background: #fff;
   border-radius: 5px;
   float: left;
-  max-width: 120px;
-  max-height: 90px;
+  width: 120px;
+  height: 90px;
   aspect-ratio: 4 / 3;
   object-fit: cover;
   transition: .3s;
@@ -412,7 +412,7 @@ ul.corporate-citizenship-community-support li img {
     grid-template-columns: repeat(auto-fill, 30%);
   }
   .applications-submenu li a img, .applications-submenu li div img {
-    max-width: 100px;
+    width: 100px;
   }
 }
 /*# sourceMappingURL=style-add.css.map */
