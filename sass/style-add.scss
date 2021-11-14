@@ -215,7 +215,7 @@ ul.corporate-citizenship-community-support {
     display: flex;
     flex: 1 0 100%;
     flex-direction: column;
-    border: 1px solid #999;
+    border: 1px solid #ddd;
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
@@ -329,6 +329,23 @@ ul.corporate-citizenship-community-support {
   height: 32px;
   border-radius: 16px;
   &:hover {
+  }
+}
+/* Applications 頁面樣式 */
+.smi-app--group {
+  h2 {
+    color: #004186;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 0 auto;
+    margin-bottom: 3vw;
+  }
+  .applications-menu {
+    margin-bottom: 0;
+    grid-template-columns: repeat(auto-fill, clamp(24%, 300px, 48%));
+    li {
+      padding: 1rem .5rem;
+    }
   }
 }
 /* RWD */
