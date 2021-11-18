@@ -344,6 +344,36 @@ ul.corporate-citizenship-community-support li img {
   color: #00ecec;
 }
 
+.applications-submenu .submenu-row {
+  padding-bottom: 1rem;
+}
+
+.applications-submenu .submenu-row a {
+  border-radius: 1rem;
+  display: block;
+  padding: 1rem 0;
+}
+
+.applications-submenu .submenu-row a:hover {
+  background: #1d649e;
+}
+
+.applications-submenu .submenu-group-title, .applications-submenu .submenu-product-title {
+  color: #fff !important;
+}
+
+.applications-submenu .submenu-group-title {
+  font-size: 1.4rem;
+}
+
+.applications-submenu .submenu-product-title {
+  font-size: .9rem;
+}
+
+.applications-submenu .submenu-product-img {
+  width: 96px;
+}
+
 .submenu-close {
   position: absolute;
   display: grid;
