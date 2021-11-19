@@ -345,17 +345,23 @@ ul.corporate-citizenship-community-support li img {
 }
 
 .applications-submenu .submenu-row {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 .applications-submenu .submenu-row a {
   border-radius: 1rem;
   display: block;
-  padding: 1rem 0;
+  padding: 0 0 1rem 0;
 }
 
 .applications-submenu .submenu-row a:hover {
   background: #1d649e;
+}
+
+.applications-submenu .submenu-row:last-child {
+  border-bottom: none;
 }
 
 .applications-submenu .submenu-group-title, .applications-submenu .submenu-product-title {
@@ -385,6 +391,17 @@ ul.corporate-citizenship-community-support li img {
   width: 32px;
   height: 32px;
   border-radius: 16px;
+}
+
+.submenu-overlay {
+  background: rgba(100, 100, 100, 0.75);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  z-index: 2;
 }
 
 /* Applications 頁面樣式 */
