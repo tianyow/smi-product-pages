@@ -415,7 +415,7 @@ ul.corporate-citizenship-community-support li img {
 
 .smi-app--group .applications-menu {
   margin-bottom: 0;
-  grid-template-columns: repeat(auto-fill, clamp(24%, 300px, 48%));
+  grid-template-columns: repeat(auto-fill, clamp(24%, 270px, 48%));
 }
 
 .smi-app--group .applications-menu li {
