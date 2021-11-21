@@ -281,7 +281,7 @@ ul.corporate-citizenship-community-support li img {
   left: 0;
   width: 100%;
   padding: 1.5rem;
-  z-index: 1;
+  z-index: 999;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity .1s, top 0s;
@@ -401,7 +401,7 @@ ul.corporate-citizenship-community-support li img {
   left: 0;
   right: 0;
   display: none;
-  z-index: 2;
+  z-index: 991;
 }
 
 /* Applications 頁面樣式 */
@@ -476,6 +476,10 @@ ul.corporate-citizenship-community-support li img {
   }
   .applications-menu {
     grid-template-columns: repeat(auto-fill, 30%);
+  }
+  .applications-menu > li > a img {
+    width: 72px;
+    height: 72px;
   }
   .applications-submenu li a img, .applications-submenu li div img {
     width: 100px;
