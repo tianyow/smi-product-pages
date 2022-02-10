@@ -22,3 +22,6 @@ css/source/
 .Spotlight-V100
 .Trashes
 Thumbs.db
+
+# Template files
+Portable.html
