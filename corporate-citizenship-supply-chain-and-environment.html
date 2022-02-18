@@ -343,6 +343,46 @@
         </div>
         <div class="minor-menu">
           <div class="header-icon pc">
+            <div class="login">
+              <a class="now" href="javascript:loginShow();">
+                <span>LOGIN</span>
+                <i class="icon-login"></i>
+              </a>
+              <section id="dropmenu-member" class="dropmenu-member">
+                <div class="top">
+                  <h2 class="title title-lg">Channel Partner Portal Login</h2>
+                  <form method="POST" action="https://www.siliconmotion.com/auth/login" accept-charset="UTF-8"
+                    @submit="checkLogin"><input name="_token" type="hidden"
+                      value="lEQHxxFMg2bufd0Kd0YyCqCYf7uuX7z7TTFHA2VM">
+                    <div class="form-group">
+                      <label class="col-form-label" for="username">Username：</label>
+                      <div class="position-relative">
+                        <input id="username" name="email" class="form-control" type="text"
+                          placeholder="please enter your email" v-model="username">
+                        <small v-show="username_check">required</small>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-form-label" for="password">Password：</label>
+                      <div class="position-relative">
+                        <input id="password" name="password" class="form-control" type="password" v-model="password">
+                        <small v-show="password_check">required</small>
+                      </div>
+                    </div>
+                    <div class="login-btn-group">
+                      <div class="btn btn-bg-primary btn-radius">
+                        <button type="submit">Login</button>
+                      </div>
+                      <a href="https://www.siliconmotion.com/password/forget">Forget password?</a>
+                    </div>
+                  </form>
+                </div>
+                <div class="bottom bg-gray">
+                  <a class="btn btn-bg-primary btn-radius" href="https://www.siliconmotion.com/registers/entrance"
+                    title="Register">Register</a>
+                </div>
+              </section>
+            </div>
             <a class="contact" href="https://www.siliconmotion.com/support/contact" title="CONTACT">
               <span>CONTACT</span>
               <i class="icon-contact"></i>
@@ -689,12 +729,32 @@
     </div>
   </div>
 
+   <div class="d-cookie">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-10 col-md-9">
+          <div class="d-cookie-block">
+            <h3>SILICON MOTION COOKIES NOTICE</h3>
+            <p>Silicon Motion websites use cookies to collect information about how you interact with our website and allow us to remember you. We use this information in order to improve and customize your browsing experience and for analytics and metrics about our visitors both on this website and other media. To find out more about the cookies we use, see our <a href="https://www.siliconmotion.com/policy">Privacy Policy</a>.</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3">
+          <div class="d-cookie-block btn">
+            <a class="block-link cookie-checked" href="javascript:void(0)">Accept</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!--[if lt IE 9]><script src="https://www.siliconmotion.com/js/html5.js"></script><![endif]-->
   <script src="https://www.siliconmotion.com/js/lib.js"></script>
   <script src="https://www.siliconmotion.com/js/weya.js"></script>
+  <script src="https://www.siliconmotion.com/js/dist/cookies.min.js"></script>
   <script src="js/lang.js"></script>
   <script src="js/sweetalert2.all.min.js"></script>
   <script src="js/stickynav.min.js"></script>
+  <script src="https://www.siliconmotion.com/dist/login.js"></script>
 
 </body>
 
