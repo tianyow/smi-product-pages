@@ -41,6 +41,23 @@
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900" rel="stylesheet">
   <link href="https://www.siliconmotion.com/dist/spinners.css" rel="stylesheet">
   <link href="css/style-add.css" rel="stylesheet">
+  <style>
+    #tab-portfolio button.nav-link {
+      border: none;
+      color: inherit;
+      font-size: 1.25rem;
+      width: calc(100% / 3);
+    }
+    #tab-portfolio button.nav-link.active {
+      color: #004186;
+      font-weight: bold;
+      border-bottom: 3px solid #3cb6f8;
+    }
+    .card .card-img-top {
+      width: 100%;
+      max-width: 300px;
+    }
+  </style>
 
   <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
@@ -462,7 +479,7 @@
   </header>
   <main>
     <section class="banner sec-pd js-fillbg "
-      style="background-image: url( images/banner_applications.jpg);background-position: center right;">
+      style="background-image: url( images/banner_automotive.jpg);background-position: center right;">
       <div class="container">
         <div class="row">
           <div class="col-md-7">
@@ -517,19 +534,257 @@
 
       <section id="pro-1" class="sec-pd sec-scroll">
         <div class="container">
+          <div class="editor row">
+            <h3>Driving Automotive Innovation</h3>
+            <p class="mb-8">The industry is rapidly transforming with technology driving innovation, automotive standards shaping requirements, and consumer preferences changing demands. Since the car on the road is now its own data center, the need for data storage has grown exponentially — and so has the role of NAND flash to support mission-critical functions in automotive applications and entertainment features. </p>
+            <p class="mb-8">For future autonomous driving, the demand for fast, high-capacity storage propels the development of embedded products along with the requirement for a higher-end transmission system and a larger storage unit.</p>
+          </div>
           <div class="row">
-            <h2 class="title title-md"></h2>
-     
+            <img class="img-fluid mb-5" src="images/Automotive-statics.jpg" alt="">
+            <p>As electronic content becomes a larger and larger part of the vehicle, storage technologies employing NAND flash must be able to ensure optimized performance, reliability, and longevity. Silicon Motion provides dependable high-performance automotive-grade storage solutions, including controllers and single-chip solutions for in-vehicle infotainment, navigation, ADAS, DVR, and autonomous driving applications.</p>
           </div>
         </div>
       </section>
 
       <section id="pro-2" class="sec-pd sec-scroll">
         <div class="container">
-          <div class="row">
-            <h2 class="title title-md"></h2>
-            
+          <div class="editor row">
+            <h3>NAND Storage Products for Automotive Applications</h3>
+            <img class="img-fluid mb-5" src="images/Automotive-applications.jpg" alt="">
+            <h4>With over 20 years of experience in developing specialized processor ICs that manage NAND components, our expertise delivers best-in-class automotive-grade storage solutions.</h4>
           </div>
+        </div>
+      </section>
+
+      <section id="pro-3" class="sec-pd sec-scroll">
+        <div class="container">
+          <div class="editor row">
+            <h3>Storage for Automotive-Grade Standards</h3>
+            <img class="img-fluid" src="images/Automotive-grade-standards.jpg" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section id="pro-4" class="sec-pd sec-scroll">
+        <div class="container">
+          <div class="editor row">
+            <h3>Dedicated Automotive Service and Quality Support</h3>
+          </div>
+          <div class="row justify-content-center mb-10">
+            <div class="col-md-4 col-sm-6">
+              <div class="card p-3">
+                <img class="card-img-top" src="images/Automotive-badge-AEC-Q100.png" alt="">
+                <div class="card-body">
+                  <h3 class="card-title text-center">AEC-Q100 Grade 3/2</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="card p-3">
+                <img class="card-img-top" src="images/Automotive-badge-ISO9001.png" alt="">
+                <div class="card-body">
+                  <h3 class="card-title text-center">ISO9001</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="card p-3">
+                <img class="card-img-top" src="images/Automotive-badge-IATF-16949.png" alt="">
+                <div class="card-body">
+                  <h3 class="card-title text-center">Supplier chain certification by IATF 16949</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <p>All of our automotive-grade flash products undergo rigorous testing to meet the qualifications that the industry and our customers demand, including AEC-Q100 compliance, ISO 9001, and supplier chain certification by IATF 16949 certification. In addition, Silicon Motion provides product supply longevity to reduce costs for additional qualifications.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="pro-5" class="sec-pd sec-scroll">
+        <div class="container">
+          <div class="editor row">
+            <h3>Our Automotive Storage Portfolio</h3>
+            <p>Silicon Motion's automotive storage eMMC, UFS, auto-grade SSD controller, and automotive removable storage device have emerged in the automotive storage market.</p>
+          </div>
+          <div class="row mt-10">
+            <div class="col-12">
+              <nav>
+                <div id="tab-portfolio" class="nav nav-tabs" id="nav-tab">
+                  <button class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-flashController">Flash Controllers</button>
+                  <button class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-storageSolutions">Storage Solutions</button>
+                  <button class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-others">Others</button>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-flashController">
+                  <div class="row mb-10">
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="card p-3">
+                        <img class="card-img-top" src="images/Automotive-BGA-SSD.png" alt="">
+                        <h3 class="card-title mb-2">BGA SSD</h3>
+                        <div class="card-text">
+                          <ul class="ml-5">
+                            <li>SATA/PCIe NVMe</li>
+                            <li>SR-IOV Support</li>
+                            <li>Temperature: -40°C to +85°C/40°C to +105°C</li>
+                            <li>32GB to 1TB</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="card p-3">
+                        <img class="card-img-top" src="images/Automotive-eMMC.png" alt="">
+                        <h3 class="card-title">eMMC</h3>
+                        <div class="card-text">
+                          <ul class="ml-5">
+                            <li>eMMC 4.5/5.0/5.1</li>
+                            <li>100/153 balls supported</li>
+                            <li>Temperature: -40°C to +85°C/40°C to +105°C</li>
+                            <li>4GB to 256GB</li>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="card p-3">
+                        <img class="card-img-top" src="images/Automotive-UFS.png" alt="">
+                        <h3 class="card-title">UFS</h3>
+                        <div class="card-text">
+                          <ul class="ml-5">
+                            <li>UFS 2.1/3.1</li>
+                            <li>Automotive-grade endurance and performance</li>
+                            <li>Write Booster</li>
+                            <li>Host Performance Booster</li>
+                            <li>Temperature: -40°C to +105°C</li>
+                            <li>32GB to 512GB</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="card p-3">
+                        <img class="card-img-top" src="images/Automotive-SD-card.png" alt="">
+                        <h3 class="card-title">Flash Card</h3>
+                        <div class="card-text">
+                          <ul class="ml-5">
+                            <li>SDA SD3.0/5.0/6.1 compliant</li>
+                            <li>Automotive-grade endurance and performance</li>
+                            <li>Temperature: -40°C to +85°C</li>
+                            <li>32GB to 512GB</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-storageSolutions">
+                  <div class="row mb-10 justify-content-center">
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="card p-3">
+                        <img class="card-img-top" src="images/Automotive-FerriSSD.png" alt="">
+                        <h3 class="card-title mb-2">FerriSSD</h3>
+                        <div class="card-text">
+                          <ul class="ml-5">
+                            <li>SATA/PCIe NVMe</li>
+                            <li>16mm x 20mm BGA</li>
+                            <li>5GB to 480GB</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="card p-3">
+                        <img class="card-img-top" src="images/Automotive-FerriUFS.png" alt="">
+                        <h3 class="card-title mb-2">Ferri-UFS</h3>
+                        <div class="card-text">
+                          <ul class="ml-5">
+                            <li>UFS 3.1/2.2 </li>
+                            <li>153-ball BGA</li>
+                            <li>32GB to 512GB</li>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="card p-3">
+                        <img class="card-img-top" src="images/Automotive-FerrieMMC.png" alt="">
+                        <h3 class="card-title mb-2">Ferri-eMMC</h3>
+                        <div class="card-text">
+                          <ul class="ml-5">
+                            <li>eMMC 4.5/5.0/5.1</li>
+                            <li>100/153-ball BGA</li>
+                            <li>2GB to 512GB</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-others">
+                  <div class="row mb-10 justify-content-center">
+                    <div class="col-lg-3 col-sm-6">
+                      <div class="card p-3">
+                        <img class="card-img-top" src="images/Automotive-SM768.png" alt="">
+                        <h3 class="card-title mb-2">Graphics SoC/GPU</h3>
+                        <div class="card-text">
+                          <ul class="ml-5">
+                            <li>128-bit 2D engine with video decoder</li>
+                            <li>Up to 4K UHD (3840 x 2160)</li>
+                            <li>Temperature: -40°C to +85°C</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="font-weight-bold mb-2">References</p>
+          <div class="editor">
+            <ol>
+              <li><a href="">Data Storage is the Key to Autonomous Vehicles' Future</a></li>
+              <li><a href="">Global Autonomous Vehicle Market</a></li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section id="pro-6" class="sec-pd sec-scroll">
+        <div class="container">
+          <div class="editor row">
+            <h3>Related Articles</h3>
+            <div class="col-12">
+              <ul>
+                <li><a href="">Silicon Motion's Ferri-UFS Sets New Performance Standard for Flash-Based Storage in Automotive Applications</a></li>
+                <li><a href="">Silicon Motion's Ferri family Optimizes Embedded Flash-Based Storage for Automotive Use</a></li>
+                <li><a href="">Silicon Motion's Ferri family: AEC-Q100 Qualified Embedded Storage </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pro-7" class="sec-pd sec-scroll">
+        <div class="container">
+          <div class="editor row">
+            <h3>Related Videos</h3>
+            <div class="col-12">
+              <div class="yt--wrapper mt-5">
+                <iframe src="https://www.youtube.com/embed/pxaMEHLZLrM" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="yt--note">For more about Silicon Motion's videos, please link to <a class="link"
+                href="https://www.youtube.com/channel/UCB4_AXjqQV_LgCRlNgzsctQ/videos" target="_blank">SMI's Youtube
+                Channel.</a></div>
+            </div>
+          </div>
+        </div>
+
+        </div>
         </div>
       </section>
 
