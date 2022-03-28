@@ -422,6 +422,27 @@ ul.corporate-citizenship-community-support li img {
   padding: 1rem .5rem;
 }
 
+/* Application - Automotive 頁面樣式 */
+#tab-portfolio button.nav-link {
+  border: none;
+  color: inherit;
+  font-size: 1.25rem;
+  width: calc(100% / 3);
+}
+#tab-portfolio button.nav-link.active {
+  color: #004186;
+  font-weight: bold;
+  border-bottom: 3px solid #3cb6f8;
+}
+#automotive-certifications .card-img-top {
+  width: 100%;
+  max-width: 260px;
+}
+#automotive-portfolio .card-img-top {
+  width: 100%;
+  max-width: 300px;
+}
+
 /* RWD */
 /* IR-table layout fix */
 @media (max-width: 991px) {
@@ -485,4 +506,3 @@ ul.corporate-citizenship-community-support li img {
     width: 100px;
   }
 }
-/*# sourceMappingURL=style-add.css.map */
