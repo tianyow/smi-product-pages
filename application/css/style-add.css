@@ -433,11 +433,16 @@ ul.corporate-citizenship-community-support li img {
   width: 100%;
   max-width: 260px;
 }
+#automotive-portfolio a {
+  display: block;
+}
+#automotive-portfolio a:hover {
+  transform: translateY(-5px);
+}
 #automotive-portfolio .card-img-top {
   width: 100%;
   max-width: 300px;
 }
-
 /* RWD */
 /* IR-table layout fix */
 @media (max-width: 991px) {
