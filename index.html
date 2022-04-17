@@ -24,14 +24,16 @@
       width: 100%;
       display: flex;
       margin-bottom: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px dashed #ddd;
     }
     section div {
-      text-align: center;
       /* padding: 20px; */
       flex: 1;
+      text-align: center;
     }
     section h2 {
-      font-size: 1.1rem;
+      font-size: 1.5rem;
     }
 
     ul {
@@ -45,7 +47,7 @@
       /* float: left; */
       display: block;
       font-size: 14px;
-      line-height: 3;
+      padding: .75rem 0;
     }
     li.nolink a {
       pointer-events: none;
@@ -55,7 +57,6 @@
 
     a {
       color: rgb(0, 165, 241);
-      padding: 0 15px;
     }
   </style>
 </head>
@@ -63,10 +64,16 @@
 <body>
   <section>
     <div>
+      <h2>Product</h2>
+      <ul>
+        <li><a href="Portable.html">Portable(示意)</a></li>
+        <li><a href="Automotive.html">Automotive(示意)</a></li>
+      </ul>
+    </div>
+    <div>
       <h2>Applications</h2>
       <ul>
         <li><a href="application/applications.html">EN</a></li>
-        <li><a href="application/applications-automotive.html">Automotive</a></li>
         <li><a href="cht/application/applications.html">CHT</a></li>
         <li><a href="chs/application/applications.html">CHS</a></li>
         <li><a href="jp/application/applications.html">JP</a></li>
@@ -75,12 +82,18 @@
       </ul>
     </div>
     <div>
-      <h2>Product</h2>
+      <h2>Applications - Automotive</h2>
       <ul>
-        <li><a href="Portable.html">Portable(示意)</a></li>
-        <li><a href="Automotive.html">Automotive(示意)</a></li>
+        <li><a href="application/applications-automotive.html">EN</a></li>
+        <li class="nolink"><a href="">CHT</a></li>
+        <li class="nolink"><a href="">CHS</a></li>
+        <li class="nolink"><a href="">JP</a></li>
+        <li><a href="kr/application/applications-automotive.html">KR</a></li>
+      </ul>
       </ul>
     </div>
+  </section>
+  <section>
     <div>
       <h2>Ferri-Embedded-Storage</h2>
       <ul>
