@@ -443,7 +443,7 @@ ul.corporate-citizenship-community-support li img {
 
 /* Automotive連結卡片 */
 .link--card {
-  background: #010b15 url(../application/images/automotive-link-banner.jpg) no-repeat right bottom;
+  background: #010b15 url(../../application/images/automotive-link-banner.jpg) no-repeat right bottom;
   background-size: cover;
   display: block;
   width: 100%;
