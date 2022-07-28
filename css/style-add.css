@@ -177,11 +177,11 @@ ul.corporate-citizenship-community-support li img { width: 75%; max-height: 120p
 .link--card--title { color: #fff; font-size: clamp(1.5rem, 2vw, 1.75rem); font-weight: bold; margin-bottom: 32px; }
 
 /* SSD Controller - Client */
-.rounded-card-wrapper { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.rounded-card-wrapper { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
 
-@media (max-width: 990px) { .rounded-card-wrapper { grid-template-columns: repeat(2, 1fr); gap: .75rem; } }
+@media (max-width: 990px) { .rounded-card-wrapper { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; } }
 
-@media (max-width: 768px) { .rounded-card-wrapper { grid-template-columns: repeat(1, 1fr); gap: .5rem; } }
+@media (max-width: 768px) { .rounded-card-wrapper { grid-template-columns: repeat(1, minmax(0, 1fr)); gap: .5rem; } }
 
 .rounded-card { --color01: #005191; --color02: #0079C2; border: 3px solid var(--color01); border-radius: .5rem; overflow: hidden; }
 
