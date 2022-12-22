@@ -40,6 +40,38 @@
   <link href="css/aos.css" rel="stylesheet">
   <link href="css/style-add.css" rel="stylesheet">
   <link href="css/spinners.css" rel="stylesheet">
+  <style>
+    .editor table tbody tr {
+      background-color: none !important;
+    }
+    .editor table tbody th,
+    .editor table tbody td {
+      vertical-align: middle;
+    }
+    .editor .cell-table-wrapper {
+      padding: 0;
+    }
+    .editor .cell-table-wrapper table {
+      width: 100%; 
+      table-layout: fixed; 
+      border: none; 
+      border-collapse: collapse;
+    }
+    .editor .cell-table-wrapper table tbody {
+      border: none !important;
+    }
+    .editor .cell-table-wrapper table tbody tr {
+      background: none !important;
+    }
+    .editor .cell-table-wrapper table tbody th,
+    .editor .cell-table-wrapper table tbody td {
+      padding: 0 10px !important;
+    }
+    .editor .cell-table-wrapper table tbody td:not(:last-child) {
+      border-right: 1px solid #eee;
+      font-weight: normal;
+    }
+  </style>
   <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
@@ -649,6 +681,92 @@
                       <td class="d-none d-lg-table-cell"></td>
                       <td class="d-none d-lg-table-cell"></td>
                     </tr>
+                  </tbody>
+                </table>
+              </div><!-- /.more-info-->
+            </div>
+            <div class="mg_top_30 mg_btm_50" data-aos="fade-up">
+              <div class="more-info">
+                <h4>Board Diversity Matrix</h4>
+                <table class="mg_btm_10">
+                  <thead>
+                    <tr>
+                      <th colspan="2">Board Diversity Matrix (As of December 21, 2022)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th width="40%">Country of Principal Executive Offices</th>
+                      <td width="60%">Hong Kong</td>
+                    </tr>
+                    <tr>
+                      <th>Foreign Private Issuer</th>
+                      <td>Yes</td>
+                    </tr>
+                    <tr>
+                      <th>Disclosure Prohibited Under Home Country Law</th>
+                      <td>No</td>
+                    </tr>
+                    <tr>
+                      <th>Total Number of Directors</th>
+                      <td>9</td>
+                    </tr>
+                    <tr>
+                      <th></th>
+                      <td class="cell-table-wrapper">
+                        <table>
+                          <tr>
+                            <th>Female</th>
+                            <th>Male</th>
+                            <th>Non-Binary</th>
+                            <th>Did Not Disclose Gender</th>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr style="background-color:#ccc !important;">
+                      <th>Part I: Gender Identity</th>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Directors</td>
+                      <td class="cell-table-wrapper">
+                        <table>
+                          <tr>
+                            <td>1</td>
+                            <td>8</td>
+                            <td>-</td>
+                            <td>-</td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr style="background-color:#ccc !important;">
+                      <th>Part II: Demographic Background</th>
+                      <td class="cell-table-wrapper">
+                        <table>
+                          <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Underrepresented Individual in Home Country Jurisdiction</th>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <th>LGBTQ+</th>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <th>Did Not Disclose Demographic Background</th>
+                      <td>-</td>
+                    </tr>
+
                   </tbody>
                 </table>
               </div><!-- /.more-info-->
