@@ -84,7 +84,11 @@ table.download-table {
     img {
       padding-bottom: 0;
     }
-    &[data-th='Download'] {
+    &[data-th='Download'],
+    &[data-th="下載"],
+    &[data-th="下载"],
+    &[data-th="ダウンロード"],
+    &[data-th="다운로드"] {
       text-align: center;
     }
   }
