@@ -407,7 +407,8 @@ ul.corporate-citizenship-community-support {
   }
 }
 /* Application - Automotive 頁面樣式 */
-#tab-portfolio {
+#tab-portfolio,
+#tab-faq {
   button {
     &.nav-link {
       border: none;
@@ -432,6 +433,41 @@ ul.corporate-citizenship-community-support {
   .card-img-top {
     width: 100%;
     max-width: 300px;
+  }
+}
+/* FAQ */
+#section-faq {
+  .tab-pane {
+    border-bottom: 1px solid #ccc;
+    min-height: 10rem;
+    margin-bottom: 1rem;
+  }
+  .card-header {
+    line-height: 1;
+  }
+  button.btn-link {
+    background: #fff;
+    // border: 1px solid #ddd;
+    border-radius: 0;
+    font-weight: bold;
+    text-align: left;
+    white-space: normal;
+    width: 100%;
+    &:focus {
+      text-decoration: none;
+    }
+    &[aria-expanded="true"] {
+      svg {
+        transform: rotate(180deg);
+        transition: transform .3s ease-in-out;
+      }
+    }
+  }
+  .show {
+    .card-body {
+      // background: #eee;
+      border-top: 2px solid #004186;
+    }
   }
 }
 /* Automotive連結卡片 */
