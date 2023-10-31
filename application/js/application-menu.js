@@ -1,28 +1,44 @@
-﻿  // Menu elements
-  var appMenu = $('.applications-menu > li > a');
-  var appMenuClose = $('.submenu-close');
-  // Open Submenu
-  appMenu.on('click', function (e) {
-    e.preventDefault();
-    $('.submenu-wrapper.show').removeClass('show');
-    $(this).next('.submenu-wrapper').addClass('show');
-    $('.submenu-overlay').show();
-  });
-  // Close Subment
-  appMenuClose.on('click', function (e) {
-    $('.submenu-wrapper').removeClass('show');
-    $('.submenu-overlay').hide();
-    e.preventDefault();
-  })
+﻿// Cache selectors
+const $menu = $('.applications-menu');
+const $submenu = $('.submenu-wrapper');
+const $overlay = $('.submenu-overlay');
 
-  function menuClose() {
-    $('.submenu-wrapper').removeClass('show');
-    $('.submenu-overlay').hide();
+// Menu toggle logic
+function toggleMenu() {
+  if ($submenu.is(':visible')) {
+    closeMenu();
+  } else {
+    openMenu();
   }
-  $(document).on('keyup', function (event) {
-    if (event.key == "Escape") {
-      menuClose();
-    }
-  });
-  $(window).on('resize', menuClose);
-  $('.submenu-overlay').on('click', menuClose);
+}
+
+// Open menu logic
+function openMenu() {
+  $submenu.addClass('show');
+  $overlay.show();
+}
+
+// Close menu logic
+function closeMenu() {
+  $submenu.removeClass('show');
+  $overlay.hide();
+}
+
+// Event delegation
+$menu.on('click', 'li > a', function(e) {
+  e.preventDefault();
+  toggleMenu();
+});
+
+// Close on escape key
+window.addEventListener('keyup', (e) => {
+  if (e.key === 'Escape') {
+    closeMenu();
+  }
+});
+
+// Close on outside click
+$overlay.on('click', closeMenu);
+
+// Close on resize
+window.addEventListener('resize', closeMenu);
