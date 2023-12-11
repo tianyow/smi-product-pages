@@ -234,12 +234,13 @@ ul.corporate-citizenship-community-support {
     border: 1px solid #ddd;
     border-radius: 10px;
     text-align: center;
-    cursor: pointer;
+    // cursor: pointer;
     justify-content: flex-start;
     list-style: none;
     padding-top: 0 !important;
     padding-left: 0 !important;
-    & > a {
+    & > a[href],
+    & > div {
       padding-bottom: 8px !important;
       height: 100%;
       img {
@@ -268,6 +269,12 @@ ul.corporate-citizenship-community-support {
       }
       img {
         filter: none;
+      }
+    }
+    &:has(.noLink) {
+      &:hover {
+        background: white;
+        border: 1px solid #ddd;
       }
     }
 
